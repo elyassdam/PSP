@@ -9,7 +9,7 @@ public class EjemploLectura {
 			BufferedReader br = new BufferedReader(in);
 			String texto;
 			try {
-			System.out.println("Introduce una cadena....");
+			System.out.println("Introduce una cadena por favor....");
 			texto= br.readLine();
 			System.out.println("Cadena escrita: " + texto);
 			in.close();
