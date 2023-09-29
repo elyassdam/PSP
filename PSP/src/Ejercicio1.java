@@ -11,7 +11,7 @@ public class Ejercicio1 {
 		ProcessBuilder pb = new ProcessBuilder("java", "Ejemplo2");
 		//se establece el directorio donde se encuentra el ejecutable
 		pb.directory(directorio);
-		System.out.printf("Directorio de trabajo: %s%n",pb.directory());
+		System.out.printf("Directorio de trabajo de esta practica %s%n",pb.directory());
 		//El siguiente ejemplo es un programa Java que ejecuta el programa Java anterior.
 		//se ejecuta el proceso
 		Process p = pb.start();
