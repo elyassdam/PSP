@@ -17,7 +17,7 @@ public class Suma {
 		
 		
 if(isNumeric(cad1)&&isNumeric(cad2)) {
-	System.out.println(Integer.parseInt(cad1)+Integer.parseInt(cad1));
+	System.out.println(Integer.parseInt(cad1)+Integer.parseInt(cad2));
 	System.exit(0);
 }
 	}

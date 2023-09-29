@@ -5,18 +5,17 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 
-public class Ejercicio1_5 {
+public class Ejercicio1_6 {
 
 	public static void main(String[] args) throws IOException {
-
 		File directorio = new File(".\\bin");
-		ProcessBuilder pb = new ProcessBuilder("java", "Suma");
+		ProcessBuilder pb = new ProcessBuilder("java", "CadenasAsterisco");
 		pb.directory(directorio);
 		// se ejecuta el proceso
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
-		String numero="20\n58\n";
+		String numero="hola \n";
 		os.write(numero.getBytes());
 		os.flush(); // vacia el buffer de salida
 		// lectura -- obtiene la salida
@@ -44,5 +43,6 @@ public class Ejercicio1_5 {
 		ioe.printStackTrace();
 		}
 	}
+	}
 
-}
+
