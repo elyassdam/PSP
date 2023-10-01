@@ -10,12 +10,12 @@ public class Ejercicio1_6 {
 	public static void main(String[] args) throws IOException {
 		File directorio = new File(".\\bin");
 		ProcessBuilder pb = new ProcessBuilder("java", "CadenasAsterisco");
-		pb.directory(directorio);
+		pb.directory(directorio);//Establecemos el directorio en el que esta el pbuilder
 		// se ejecuta el proceso
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
-		String numero="hola \n";
+		String numero="hola \n";//Introducimos la \n indicando que es un enter
 		os.write(numero.getBytes());
 		os.flush(); // vacia el buffer de salida
 		// lectura -- obtiene la salida
