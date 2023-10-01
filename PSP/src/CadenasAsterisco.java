@@ -9,6 +9,16 @@ public class CadenasAsterisco {
 		BufferedReader br = new BufferedReader(in);
 		String cadena;
 		boolean asterisco=false;
+/* for(;;) {
+System.out.println("introduce una cadena :");
+			cadena=br.readLine();
+System.out.println("la cadena introducida es : "+cadena );
+if(cadena.equals("*")){
+			System.out.println("has introducido un asterisco como finalizacion del programa");
+break;
+}
+}
+*/
 		while(asterisco==false) {
 			System.out.println("introduce una cadena :");
 			cadena=br.readLine();
