@@ -16,8 +16,13 @@ public class Ejercicio1_5 {
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
-		String numero="20\n58\n";//Se separan con /n sin espacios 
-		os.write(numero.getBytes());
+		String entrada1="20\n";
+		String entrada2="9874\n";
+		//String entrada="7850\n98\n";
+		os.write(entrada1.getBytes());
+		//os.write(System.lineSeparator().getBytes());
+		os.write(entrada2.getBytes());
+		//os.write(System.lineSeparator().getBytes());
 		os.flush(); // vacia el buffer de salida
 		// lectura -- obtiene la salida
 		InputStream is = p.getInputStream();
