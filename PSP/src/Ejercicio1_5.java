@@ -12,7 +12,7 @@ public class Ejercicio1_5 {
 		File directorio = new File(".\\bin");
 		ProcessBuilder pb = new ProcessBuilder("java", "Suma");
 		pb.directory(directorio);
-		// se ejecuta el proceso
+		// Se ejecuta el proceso 
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
