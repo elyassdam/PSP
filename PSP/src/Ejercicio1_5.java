@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +13,7 @@ public class Ejercicio1_5 {
 		File directorio = new File(".\\bin");
 		ProcessBuilder pb = new ProcessBuilder("java", "Suma");
 		pb.directory(directorio);
-		// Se ejecuta el proceso 
+		// se ejecuta el proceso
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();

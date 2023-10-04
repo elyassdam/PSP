@@ -15,12 +15,16 @@ public class Ejercicio1_6 {
 		Process p = pb.start();
 		// escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
-		String numero="hola \n";//Introducimos la \n indicando que es un enter
-		os.write(numero.getBytes());
-		os.flush(); // vacia el buffer de salida
+		String cadena="hola\n";
+		String cadenaAsterisco="h";
+		os.write(cadena.getBytes());
+		os.write(System.lineSeparator().getBytes());
+		os.write(cadenaAsterisco.getBytes());
+		os.flush();// vacia el buffer de salida
+		os.close();
 		// lectura -- obtiene la salida
 		InputStream is = p.getInputStream();
-		int c;
+		int c; 
 		while ((c = is.read()) != -1)
 		System.out.print((char) c);
 		is.close();

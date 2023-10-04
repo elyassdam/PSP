@@ -20,7 +20,7 @@ public class Ejercicio1_7 {
 		    pb.redirectError(fErr); 
 			pb.redirectInput(fIn);
 			Process p = pb.start();
-		
+		  
 		
 			// COMPROBACION DE ERROR - 0 bien - 1 mal
 			int exitVal;

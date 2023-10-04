@@ -1,11 +1,12 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 
-public class Ejemplo4_2 {
+public class Ejemplo5 {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -16,8 +17,12 @@ public class Ejemplo4_2 {
 			Process p = pb.start();
 			// escritura -- envia entrada
 			OutputStream os = p.getOutputStream();
-			os.write("Hola Manuel\n".getBytes());
+			BufferedReader buf=new BufferedReader(new FileReader("entrada.txt"));
+			String cadena=buf.readLine();
+			os.write(cadena.getBytes());
+			os.write(System.lineSeparator().getBytes());
 			os.flush(); // vacia el buffer de salida
+			os.close();
 			// lectura -- obtiene la salida
 			InputStream is = p.getInputStream();
 			int c;
@@ -36,7 +41,7 @@ public class Ejemplo4_2 {
 			InputStream er = p.getErrorStream();
 			BufferedReader brer = new BufferedReader(new
 			InputStreamReader(er));
-			String liner = null;
+			String liner = null;                                     
 			while ((liner = brer.readLine()) != null)
 			System.out.println("ERROR >" + liner);
 			} catch (IOException ioe) {
