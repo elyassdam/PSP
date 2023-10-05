@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.util.Scanner;
 
 public class Ejercicio1_6 {
 
@@ -13,15 +14,19 @@ public class Ejercicio1_6 {
 		pb.directory(directorio);//Establecemos el directorio en el que esta el pbuilder
 		// se ejecuta el proceso
 		Process p = pb.start();
-		// escritura -- envia entrada
+		Scanner sc=new Scanner(System.in);
+		String texto="";
+		//escritura -- envia entrada
 		OutputStream os = p.getOutputStream();
-		String cadena="hola\n";
-		String cadenaAsterisco="h";
-		os.write(cadena.getBytes());
-		os.write(System.lineSeparator().getBytes());
-		os.write(cadenaAsterisco.getBytes());
+		do {
+			System.out.println("Introduce una cadena");
+			 texto=sc.nextLine();
+			os.write(texto.getBytes());
+			os.write(System.lineSeparator().getBytes());
+		}while(!texto.equals("*"));
 		os.flush();// vacia el buffer de salida
 		os.close();
+		
 		// lectura -- obtiene la salida
 		InputStream is = p.getInputStream();
 		int c; 

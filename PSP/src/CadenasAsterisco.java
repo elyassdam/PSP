@@ -15,17 +15,17 @@ public class CadenasAsterisco {
 		 * println("has introducido un asterisco como finalizacion del programa");
 		 * break; } }
 		 */
-		System.out.println("introduce una cadena :");
-		cadena = br.readLine();
-		while (!cadena.equals("*")) {
-			
-			System.out.println("introduce una cadena :");
+			do {
+			//System.out.println("introduce una cadena :");
 			cadena = br.readLine();
 			System.out.println("Has introducido "+cadena);
-		}
+		}	
+			while (!cadena.equals("*")) ;
+			in.close();
 			System.out.println("El programa se acabó ya que la cadena es un asterisco");
-		
-		System.exit(1);
+		System.exit(0);
 	}
-
 }
+
+
+			
