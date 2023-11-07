@@ -11,7 +11,6 @@ public class Produc_Consum {
 	
     p.start();
 	c.start();
-
 	
   }
 }
