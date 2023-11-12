@@ -23,8 +23,8 @@ public class Cola {
     	  }
     	  this.cadena = cadena;
     	  disponible = true;
-    	
     	  notify();
+    	  
     	}
 
      

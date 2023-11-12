@@ -11,9 +11,9 @@ public class Productor extends Thread {
     }
 
     public void run() {
+    	 
         for (int i = 0; i < 10; i++) {
             cola.put("PING"); //pone la cadena 
-        
             try {
                 sleep(100);
             } catch (InterruptedException e) { }	
@@ -25,5 +25,6 @@ public class Productor extends Thread {
         }
     }
 }
+
 
 
