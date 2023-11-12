@@ -12,9 +12,7 @@ public class EJ1_GeneradorNumeros {
 		String Identificador = (generadorID(6));
 		System.out.print(Identificador);
 		generaFicheroCSV(Identificador);
-		System.out.println("Antes de generar el archivo CSV");
-		generaFicheroCSV(Identificador);
-		System.out.println("Después de generar el archivo CSV");
+		
 
 	}
 
@@ -39,7 +37,7 @@ public class EJ1_GeneradorNumeros {
 
 	public static void generaFicheroCSV(String ID) {
 		try {
-			File f = new File("archivoPractica2.csv");
+			File f = new File("archivo100K.csv");
 			FileWriter fichero = new FileWriter(f.getAbsoluteFile(), true);
 			BufferedWriter bw = new BufferedWriter(fichero);
 
