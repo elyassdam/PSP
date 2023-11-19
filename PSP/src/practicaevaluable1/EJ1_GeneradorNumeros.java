@@ -4,15 +4,19 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class EJ1_GeneradorNumeros {
-
+	public static List<String> id=new ArrayList();
+	 public static List<Integer> suma=new ArrayList();
 	public static void main(String[] args) {
 		String Identificador = (generadorID(6));
 		System.out.print(Identificador);
 		generaFicheroCSV(Identificador);
-		
+		System.out.println(id.size());
+		System.out.println(suma.size());
 
 	}
 
@@ -37,10 +41,10 @@ public class EJ1_GeneradorNumeros {
 
 	public static void generaFicheroCSV(String ID) {
 		try {
-			File f = new File("archivo100K.csv");
+			File f = new File("archivo1000K.csv");
 			FileWriter fichero = new FileWriter(f.getAbsoluteFile(), true);
 			BufferedWriter bw = new BufferedWriter(fichero);
-
+		
 			String cadena;
 			char c;
 			Random random = new Random();
@@ -51,11 +55,13 @@ public class EJ1_GeneradorNumeros {
 					c = ID.charAt(i);
 					numero = random.nextInt(10001);
 					cadena = c + "" + numero;
+					id.add(cadena);
+					suma.add(numero);
 					bw.write(cadena);
 					bw.newLine();
 					contador++;
 				}
-
+System.out.println(id.toString());
 			}
 
 			bw.close();
