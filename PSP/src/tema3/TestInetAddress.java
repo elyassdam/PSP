@@ -16,7 +16,6 @@ public class TestInetAddress {
 		System.out.println("SALIDA PARA UNA URL:");
 		dir = InetAddress.getByName("www.google.es");
 		pruebaMetodos(dir);
-				
 	     // Array de tipo InetAddress con todas las direcciones IP 
 	     //asignadas a google.es
 	     System.out.println("\tDIRECCIONES IP PARA: " + dir.getHostName());

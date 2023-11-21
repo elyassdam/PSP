@@ -19,7 +19,6 @@ public class Ejercicio1_4Hilos extends Thread{
 	public static void main(String[] args) {
 		Ejercicio1_4Hilos hilo=new Ejercicio1_4Hilos();
 		hilo.start();
-		
 	}
 		@Override
 		public void run() {
