@@ -41,7 +41,7 @@ public class EJ1_GeneradorNumeros {
 
 	public static void generaFicheroCSV(String ID) {
 		try {
-			File f = new File("archivo1000K.csv");
+			File f = new File("archivo100Kresul.csv");
 			FileWriter fichero = new FileWriter(f.getAbsoluteFile(), true);
 			BufferedWriter bw = new BufferedWriter(fichero);
 		

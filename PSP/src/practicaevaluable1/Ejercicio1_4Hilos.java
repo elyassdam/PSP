@@ -13,10 +13,12 @@ import java.util.List;
 import java.util.Map;
 
 public class Ejercicio1_4Hilos extends Thread{
-	static List<String>letras=new ArrayList();
-	static List<Integer>nums=new ArrayList();
+	static List<String>letras=EJ1_GeneradorNumeros.id;
+	static List<Integer>nums=EJ1_GeneradorNumeros.suma;
     private String[] datosFichero;
 	public static void main(String[] args) {
+		EJ1_GeneradorNumeros.main(null);
+		
 		Ejercicio1_4Hilos hilo=new Ejercicio1_4Hilos();
 		hilo.start();
 		
@@ -24,7 +26,7 @@ public class Ejercicio1_4Hilos extends Thread{
 		@Override
 		public void run() {
 			 System.out.println("Abriendo fichero");
-		        File fich = new File("archivo100K.csv");
+		        File fich = new File("archivo100Kresul.csv");
 		        datosFichero = AbreFichero(fich);
 		        if (datosFichero != null) {
 		            System.out.println("Procesando información del fichero ");
@@ -48,11 +50,11 @@ public class Ejercicio1_4Hilos extends Thread{
 	String linea;
 	//contar lineas del archivo 
 	while((linea=br.readLine())!=null) {
-		char l=linea.charAt(0);
-		String letra=String.valueOf(l);
-		int numero=Integer.parseInt(linea.substring(1));
-		letras.add(letra);
-		nums.add(numero);
+		//char l=linea.charAt(0);
+		//String letra=String.valueOf(l);
+		//int numero=Integer.parseInt(linea.substring(1));
+		//letras.add(letra);
+		//nums.add(numero);
 		contadorLineas++;
 	}
 	br.close();
@@ -92,7 +94,7 @@ System.out.println(letras.size()+""+nums.size());
 		}
 		}
 		//System.out.println("despues del mapa"+letras.size()+""+nums.size());
-		//System.out.println(sumaParcial.toString());
+		System.out.println(sumaParcial.toString());
 		System.out.println("Proceso realizado correctamente");
 		}catch(Exception e) {
 		e.printStackTrace();
@@ -111,11 +113,9 @@ System.out.println(letras.size()+""+nums.size());
 			}
 			 bw.close();
 				
-	
+	System.out.println("size"+mapaGenerado.size());
 	                   
 	                }
-		
-		
 	catch(Exception e) {
 		e.printStackTrace();
 	}

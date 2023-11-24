@@ -12,7 +12,7 @@ public class Productor extends Thread {
 
     public void run() {
         for (int i = 0; i < 5; i++) {
-            cola.put(i); //pone la cadena 
+            cola.put(i); //pone el numero 
         
             try {
                 sleep(100);
