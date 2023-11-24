@@ -21,7 +21,7 @@ public class Cola {
 		char valor=buffer[contador-1];//consume el caracter ultimo producido   
   	  System.out.println("Se consume: " + valor);    	  
 notifyAll();
-  	  return valor;
+  	  return valor; //devuelve el valor consumido
 	
 	}
 
