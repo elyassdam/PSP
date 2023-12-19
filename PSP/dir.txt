@@ -1,0 +1,64 @@
+
+
+    Directorio: C:\Users\Yassin\git\PSP\PSP\bin
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        28/11/2023      9:04                ejemplos                                                             
+d-----        28/11/2023      9:04                ejerccio2_1                                                          
+d-----        28/11/2023      9:04                ejercicio2_11                                                        
+d-----        28/11/2023      9:04                ejercicio2_2                                                         
+d-----        28/11/2023      9:04                ejercicio2_3                                                         
+d-----        28/11/2023      9:04                ejercicio2_5                                                         
+d-----        28/11/2023      9:04                ejercicio2_7                                                         
+d-----        28/11/2023      9:04                ejercicio2_8                                                         
+d-----        28/11/2023      9:04                ejercicio3_3                                                         
+d-----        28/11/2023      9:04                ejercicio3_8                                                         
+d-----        28/11/2023      9:04                ejercicio3_9                                                         
+d-----        14/12/2023      9:08                examen                                                               
+d-----        28/11/2023      9:04                interfazdeMensajes                                                   
+d-----        28/11/2023     12:15                practicaevaluable1                                                   
+d-----        28/11/2023      9:04                productorConsumidor                                                  
+d-----        28/11/2023      9:04                productorConsumidorSynchronized                                      
+d-----        28/11/2023      9:04                tema3                                                                
+-a----        28/11/2023      9:04            644 BloqueoHilos.class                                                   
+-a----        28/11/2023      9:04            652 CadenaQuintuple.class                                                
+-a----        28/11/2023      9:04           2289 CadenaQuintuple_1.class                                              
+-a----        28/11/2023      9:04           1667 CadenasAsterisco.class                                               
+-a----        28/11/2023      9:04           1033 ComprobarArgumentos.class                                            
+-a----        14/12/2023      9:06              0 dir.txt                                                              
+-a----        14/12/2023      9:04           1181 DirContent.class                                                     
+-a----        28/11/2023      9:04           2967 EJ1_GeneradorNumeros.class                                           
+-a----        28/11/2023      9:04           2265 Ejemplo1_1.class                                                     
+-a----        28/11/2023      9:04           2289 Ejemplo1_2.class                                                     
+-a----        28/11/2023     11:50           1165 Ejemplo2.class                                                       
+-a----        28/11/2023      9:04           1604 Ejemplo3.class                                                       
+-a----        28/11/2023      9:04            367 Ejemplo4.class                                                       
+-a----        28/11/2023      9:04           3004 Ejemplo5.class                                                       
+-a----        28/11/2023      9:04           1980 Ejemplo6.class                                                       
+-a----        28/11/2023      9:04            910 Ejemplo7.class                                                       
+-a----        28/11/2023      9:04            968 Ejemplo8.class                                                       
+-a----        28/11/2023      9:04           1602 EjemploLectura.class                                                 
+-a----        28/11/2023      9:04           1611 Ejercicio1.class                                                     
+-a----        28/11/2023      9:04            592 Ejercicio1_3.class                                                   
+-a----        28/11/2023      9:04           1125 Ejercicio1_4.class                                                   
+-a----        28/11/2023      9:04           2929 Ejercicio1_5.class                                                   
+-a----        28/11/2023      9:04           3169 Ejercicio1_6.class                                                   
+-a----        28/11/2023      9:04           1981 Ejercicio1_7.class                                                   
+-a----        28/11/2023      9:04           2753 Ejercicio1_8.class                                                   
+-a----        28/11/2023      9:04            637 Ejercicio3.class                                                     
+-a----        28/11/2023      9:04           2403 Ejercicio4.class                                                     
+-a----        14/12/2023      9:04           1794 HacerCopia.class                                                     
+-a----        28/11/2023      9:04           1558 HiloCadena.class                                                     
+-a----        28/11/2023      9:04            548 HiloSimple.class                                                     
+-a----        28/11/2023      9:04            577 HiloSimple2.class                                                    
+-a----        14/12/2023      9:10           1804 LanzaDirContent.class                                                
+-a----        28/11/2023      9:04            600 LeerNombre.class                                                     
+-a----        28/11/2023      9:04           1093 LlamadorEjercicio1.class                                             
+-a----        28/11/2023      9:04            515 ObjetoCompartido.class                                               
+-a----        28/11/2023      9:04           2180 Suma.class                                                           
+-a----        28/11/2023      9:04            687 UsaHilo.class                                                        
+-a----        28/11/2023      9:04            804 UsaHilo2.class                                                       
+
+

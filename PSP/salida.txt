@@ -1,2 +1,2 @@
 Introduce una cadena por favor....
-Cadena escrita: null
+Cadena escrita: Hola soy yo

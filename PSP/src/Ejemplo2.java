@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 public class Ejemplo2 {
 	public static void main(String[] args) throws IOException {
-		Process p = new ProcessBuilder("CMD", "/C", "DIR").start();
+		Process p = new ProcessBuilder("PowerShell", "/C", "DIR").start();
 		try {
 		InputStream is = p.getInputStream();
 		// mostramos en pantalla caracter a caracter
