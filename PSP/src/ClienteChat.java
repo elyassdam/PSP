@@ -1,4 +1,4 @@
-package ChatTCP;
+
 
 import java.awt.event.*;
 import java.io.*;
@@ -22,7 +22,7 @@ public class ClienteChat extends JFrame implements ActionListener, Runnable {
 
 	// constructor
 	public ClienteChat(Socket s, String nombre) {
-		super(" CONEXIÓN DEL CLIENTE CHAT: " + nombre);
+		super(" CONEXIï¿½N DEL CLIENTE CHAT: " + nombre);
 		setLayout(null);
 
 		mensaje.setBounds(10, 10, 400, 30);
@@ -114,7 +114,7 @@ public class ClienteChat extends JFrame implements ActionListener, Runnable {
 		String nombre = JOptionPane.showInputDialog("Introduce tu nombre o nick:");
 
 		if (nombre.trim().length() == 0) {
-			System.out.println("El nombre está vacío....");
+			System.out.println("El nombre estï¿½ vacï¿½o....");
 			return;
 		}
 
